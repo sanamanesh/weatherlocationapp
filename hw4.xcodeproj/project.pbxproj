@@ -14,6 +14,12 @@
 		77784EEB2BC4EDCB00A44B60 /* hw4Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77784EEA2BC4EDCB00A44B60 /* hw4Tests.swift */; };
 		77784EF52BC4EDCB00A44B60 /* hw4UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77784EF42BC4EDCB00A44B60 /* hw4UITests.swift */; };
 		77784EF72BC4EDCB00A44B60 /* hw4UITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77784EF62BC4EDCB00A44B60 /* hw4UITestsLaunchTests.swift */; };
+		77E0DD8A2BC7644200CCC916 /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 77E0DD882BC7644200CCC916 /* Model.xcdatamodeld */; };
+		77EFC7912BC5D42C0082E121 /* DataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77EFC7902BC5D42C0082E121 /* DataModel.swift */; };
+		77EFC7952BC5D9040082E121 /* APICalls.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77EFC7942BC5D9040082E121 /* APICalls.swift */; };
+		77EFC7972BC5F7770082E121 /* WeatherViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77EFC7962BC5F7770082E121 /* WeatherViewModel.swift */; };
+		77EFC7992BC625390082E121 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77EFC7982BC625390082E121 /* HomeView.swift */; };
+		77EFC79B2BC626210082E121 /* WeatherView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77EFC79A2BC626210082E121 /* WeatherView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +50,12 @@
 		77784EF02BC4EDCB00A44B60 /* hw4UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = hw4UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		77784EF42BC4EDCB00A44B60 /* hw4UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = hw4UITests.swift; sourceTree = "<group>"; };
 		77784EF62BC4EDCB00A44B60 /* hw4UITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = hw4UITestsLaunchTests.swift; sourceTree = "<group>"; };
+		77E0DD892BC7644200CCC916 /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
+		77EFC7902BC5D42C0082E121 /* DataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataModel.swift; sourceTree = "<group>"; };
+		77EFC7942BC5D9040082E121 /* APICalls.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APICalls.swift; sourceTree = "<group>"; };
+		77EFC7962BC5F7770082E121 /* WeatherViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherViewModel.swift; sourceTree = "<group>"; };
+		77EFC7982BC625390082E121 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		77EFC79A2BC626210082E121 /* WeatherView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,6 +83,24 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		77738D2D2BC4EEA4003D2DFD /* View */ = {
+			isa = PBXGroup;
+			children = (
+				77EFC7982BC625390082E121 /* HomeView.swift */,
+				77EFC79A2BC626210082E121 /* WeatherView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		77738D2E2BC4EEAB003D2DFD /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				77EFC7902BC5D42C0082E121 /* DataModel.swift */,
+				77E0DD882BC7644200CCC916 /* Model.xcdatamodeld */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		77784ECD2BC4EDC200A44B60 = {
 			isa = PBXGroup;
 			children = (
@@ -94,6 +124,9 @@
 		77784ED82BC4EDC200A44B60 /* hw4 */ = {
 			isa = PBXGroup;
 			children = (
+				77738D2E2BC4EEAB003D2DFD /* Model */,
+				77738D2D2BC4EEA4003D2DFD /* View */,
+				77784F032BC4EDDD00A44B60 /* ViewModel */,
 				77784ED92BC4EDC200A44B60 /* hw4App.swift */,
 				77784EDB2BC4EDC200A44B60 /* ContentView.swift */,
 				77784EDD2BC4EDCA00A44B60 /* Assets.xcassets */,
@@ -125,6 +158,15 @@
 				77784EF62BC4EDCB00A44B60 /* hw4UITestsLaunchTests.swift */,
 			);
 			path = hw4UITests;
+			sourceTree = "<group>";
+		};
+		77784F032BC4EDDD00A44B60 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				77EFC7942BC5D9040082E121 /* APICalls.swift */,
+				77EFC7962BC5F7770082E121 /* WeatherViewModel.swift */,
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -257,8 +299,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				77EFC7972BC5F7770082E121 /* WeatherViewModel.swift in Sources */,
 				77784EDC2BC4EDC200A44B60 /* ContentView.swift in Sources */,
 				77784EDA2BC4EDC200A44B60 /* hw4App.swift in Sources */,
+				77E0DD8A2BC7644200CCC916 /* Model.xcdatamodeld in Sources */,
+				77EFC7992BC625390082E121 /* HomeView.swift in Sources */,
+				77EFC7952BC5D9040082E121 /* APICalls.swift in Sources */,
+				77EFC79B2BC626210082E121 /* WeatherView.swift in Sources */,
+				77EFC7912BC5D42C0082E121 /* DataModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -422,6 +470,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"hw4/Preview Content\"";
+				DEVELOPMENT_TEAM = W5WXVSLFL3;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -450,6 +499,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"hw4/Preview Content\"";
+				DEVELOPMENT_TEAM = W5WXVSLFL3;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -582,6 +632,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		77E0DD882BC7644200CCC916 /* Model.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				77E0DD892BC7644200CCC916 /* Model.xcdatamodel */,
+			);
+			currentVersion = 77E0DD892BC7644200CCC916 /* Model.xcdatamodel */;
+			path = Model.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 77784ECE2BC4EDC200A44B60 /* Project object */;
 }
